@@ -33,7 +33,7 @@ local tween = ts:Create(plr.Character.HumanoidRootPart, tweeninfo, {CFrame = wor
 tween:Play()
 end
 end)
-while task.wait(0.3) do
+while task.wait(0.26) do
 if not workspace.Mobs:FindFirstChild("Pumpkin King") then break end
 local plr = game:GetService("Players").LocalPlayer
 local distance = (workspace.Mobs["Pumpkin King"].HumanoidRootPart.Position-plr.Character:WaitForChild("HumanoidRootPart").Position).magnitude
@@ -45,7 +45,7 @@ local args = {
 }
 game:GetService("ReplicatedStorage").Systems.Combat.PlayerAttack:FireServer(unpack(args))
 local args = {
-    "BladeSlam"
+    "Frenzy"
 }
 game:GetService("ReplicatedStorage").Systems.Skills.UseSkill:FireServer(unpack(args))
 end
