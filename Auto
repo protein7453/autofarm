@@ -5,7 +5,7 @@ local tweeninfo = TweenInfo.new(5)
 local RunService = game:GetService("RunService")
 local t = ts:Create(game:GetService("Players").LocalPlayer.Character.PrimaryPart, tweeninfo,{CFrame =  workspace.DungeonRooms["2"].MobSpawns["Pumpkin King"].Spawns.Spawn.CFrame})
 t:Play()
-task.wait(5)
+task.wait(2)
 workspace.Mobs:WaitForChild("Pumpkin King")
 local function NoclipLoop()
 		for _, child in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
