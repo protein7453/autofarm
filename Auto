@@ -33,7 +33,7 @@ local tween = ts:Create(plr.Character.HumanoidRootPart, tweeninfo, {CFrame = wor
 tween:Play()
 end
 end)
-while task.wait(0.26) do
+while task.wait(0.25) do
 if not workspace.Mobs:FindFirstChild("Pumpkin King") then break end
 local plr = game:GetService("Players").LocalPlayer
 local distance = (workspace.Mobs["Pumpkin King"].HumanoidRootPart.Position-plr.Character:WaitForChild("HumanoidRootPart").Position).magnitude
