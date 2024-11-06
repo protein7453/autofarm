@@ -29,7 +29,7 @@ local tweeninfo = TweenInfo.new(
     false,
     0
 )
-local tween = ts:Create(plr.Character.HumanoidRootPart, tweeninfo, {CFrame = workspace.Mobs["Pumpkin King"].HumanoidRootPart.CFrame*CFrame.new(0,-80,0)})
+local tween = ts:Create(plr.Character.HumanoidRootPart, tweeninfo, {CFrame = workspace.Mobs["Pumpkin King"].HumanoidRootPart.CFrame*CFrame.new(0,-50,0)})
 tween:Play()
 end
 end)
@@ -50,13 +50,6 @@ local args = {
 game:GetService("ReplicatedStorage").Systems.Skills.UseSkill:FireServer(unpack(args))
 end
 end
-local plr = game:GetService("Players").LocalPlayer
-local brick = Instance.new("Part")
-brick.Size = Vector3.new(10, 1, 10)
-brick.CFrame = plr.Character.HumanoidRootPart.CFrame*CFrame.new(0,-3,0)
-brick.Anchored = true
-brick.CanCollide = true
-brick.Parent = workspace
 repeat task.wait(0.2) until #game:GetService("ReplicatedStorage").Drops:GetChildren()~=0
 for i,v in pairs(game:GetService("ReplicatedStorage").Drops:GetChildren()) do
 local args = {
