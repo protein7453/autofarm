@@ -29,7 +29,7 @@ local tweeninfo = TweenInfo.new(
     false,
     0
 )
-local tween = ts:Create(plr.Character.HumanoidRootPart, tweeninfo, {CFrame = workspace.Mobs["Pumpkin King"].HumanoidRootPart.CFrame*CFrame.new(0,-60,0)})
+local tween = ts:Create(plr.Character.HumanoidRootPart, tweeninfo, {CFrame = workspace.Mobs["Pumpkin King"].HumanoidRootPart.CFrame*CFrame.new(0,-80,0)})
 tween:Play()
 end
 end)
@@ -53,7 +53,7 @@ end
 local plr = game:GetService("Players").LocalPlayer
 local brick = Instance.new("Part")
 brick.Size = Vector3.new(10, 1, 10)
-brick.CFrame = plr.Character.HumanoidRootPart.CFrame*CFrame.new(0,-10,0)
+brick.CFrame = plr.Character.HumanoidRootPart.CFrame*CFrame.new(0,-3,0)
 brick.Anchored = true
 brick.CanCollide = true
 brick.Parent = workspace
