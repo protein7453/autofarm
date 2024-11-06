@@ -22,7 +22,7 @@ task.wait()
 if workspace.Mobs["Pumpkin King"] == nil then break end
 local plr = game:GetService("Players").LocalPlayer
 local tweeninfo = TweenInfo.new(
-    (workspace.Mobs["Pumpkin King"].HumanoidRootPart.Position-plr.Character:WaitForChild("HumanoidRootPart").Position).magnitude/100,
+    (workspace.Mobs["Pumpkin King"]:WaitForChild("HumanoidRootPart").Position-plr.Character:WaitForChild("HumanoidRootPart").Position).magnitude/100,
     Enum.EasingStyle.Linear,
     Enum.EasingDirection.In,
     0,
