@@ -29,7 +29,7 @@ local tweeninfo = TweenInfo.new(
     false,
     0
 )
-local tween = ts:Create(plr.Character.HumanoidRootPart, tweeninfo, {CFrame = workspace.Mobs["Pumpkin King"].HumanoidRootPart.CFrame*CFrame.new(0,-60,0)})
+local tween = ts:Create(plr.Character.HumanoidRootPart, tweeninfo, {CFrame = workspace.Mobs["Pumpkin King"].HumanoidRootPart.CFrame*CFrame.new(0,-70,0)})
 tween:Play()
 end
 end)
